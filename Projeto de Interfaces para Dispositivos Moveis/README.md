@@ -1,4 +1,4 @@
-# Cronograma da Disciplina — React Native, API Express e Firebase
+PROJETO DE INTERFACES PARA DISPOSITIVOS MÓVEIS
 
 
 | Aula | Data | Dia da semana | Conteúdo |

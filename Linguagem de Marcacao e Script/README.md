@@ -1,4 +1,4 @@
-HTML, CSS e JavaScript (DOM)
+LINGUAGEM DE MARCAÇÃO E SCRIPT
 
 ## HTML (aulas 1 a 6)
 
