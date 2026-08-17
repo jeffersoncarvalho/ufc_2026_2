@@ -11,7 +11,7 @@ LINGUAGEM DE MARCAÇÃO E SCRIPT
 | 5 | 24/08 (seg) | HTML Semântico |
 | 6 | 25/08 (ter) | Acessibilidade em HTML |
 
-## CSS (aulas 7 a 23)
+## CSS (aulas 7 a 24)
 
 | Aula | Data | Conteúdo |
 |---|---|---|
@@ -34,7 +34,7 @@ LINGUAGEM DE MARCAÇÃO E SCRIPT
 | 23 | 03/11 (seg) | FlexBox — parte 1 |
 | 24 | 09/11 (ter) | FlexBox — parte 2 |
 
-## JavaScript / DOM (aulas 23 a 30)
+## JavaScript / DOM (aulas 25 a 30)
 | Aula | Data | Conteúdo |
 |---|---|---|
 | 25 | 10/11 (ter) | Introdução ao JavaScript - Funções e Promessas |
