@@ -1,33 +1,28 @@
-import {Text, View, StyleSheet} from "react-native"
+import { Text, View, StyleSheet, ScrollView } from "react-native";
 
-
-import StudentComponent from "./components/StudentComponent"
+import StudentComponent from "./components/StudentComponent";
+import ProfessorComponent from "./components/ProfessorComponent.";
+import Calculator from "./components/Calculator";
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>PIDM</Text>
-      <StudentComponent 
-        name="Jefferson de Carvalho"
-        course="Design Digital"
-        ira={7.3}
-      />
+    <View>
+      <Calculator />
     </View>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection:"column",
-    justifyContent:"center",
-    alignItems:"center",
-    marginTop: 26,
+    alignItems: "center",
+    gap:5,
+    marginBottom: 150
   },
   text: {
-    fontWeight:"bold",
-    fontSize:20
-  }
-})
+    fontWeight: "bold",
+    fontSize: 20,
+  },
+});
 
-export default App
+export default App;
