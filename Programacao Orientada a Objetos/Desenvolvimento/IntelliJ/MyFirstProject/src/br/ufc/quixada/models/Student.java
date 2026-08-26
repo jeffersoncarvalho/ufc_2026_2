@@ -2,6 +2,7 @@ package br.ufc.quixada.models;
 
 public class Student {
 
+    //variáveis de INSTÂNCIA (OBJETO)
     private String name;
     private float grade01;
     private float grade02;
