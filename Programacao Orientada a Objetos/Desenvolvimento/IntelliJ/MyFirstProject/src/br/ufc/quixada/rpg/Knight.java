@@ -5,4 +5,9 @@ public class Knight extends Character{
     public String attack(){
         return "Ataque do Cavaleiro!";
     }
+
+    public void printMyName(){
+        System.out.println("Name: " + this.name);
+        System.out.println("Name: " + this.damage);
+    }
 }

@@ -15,7 +15,7 @@ public class MyMainClass {
         Character k = new Knight();
         Character a = new Archer();
         Character m = new Mage();
-        
+
         System.out.println(k.attack());
         System.out.println(a.attack());
         System.out.println(m.attack());
