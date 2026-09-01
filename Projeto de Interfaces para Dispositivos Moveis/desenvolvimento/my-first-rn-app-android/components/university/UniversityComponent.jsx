@@ -1,15 +1,28 @@
 import { StatusBar, Text, StyleSheet, ScrollView } from "react-native";
-import {SafeAreaView} from "react-native-safe-area-context"
+import {SafeAreaView, SafeAreaProvider} from "react-native-safe-area-context";
 
 import StudentComponent from "./StudentComponent";
+import ProfessorComponent from "./ProfessorComponent";
 import students from "./student_data";
+import professors from "./professor_data";
 
 const UniversityComponent = () => {
   return (
+    <SafeAreaProvider>
     <SafeAreaView style={styles.container}>
-      <StatusBar hidden/>
-      <Text style={styles.title}>Lista de Estudantes</Text>
       <ScrollView>
+      <Text style={styles.title}>Lista de Professores</Text>
+      {
+        //fazer o mapeamento dos professores aqui
+        professors.map(
+          (professor) => <ProfessorComponent 
+            name = {professor.name}
+            title={professor.title}
+            imagesrc={professor.imagesrc}
+          />
+        )
+      }
+      <Text style={styles.title}>Lista de Estudantes</Text>
       {
         students.map(
           ({name, course, ira, imagesrc}) => <StudentComponent 
@@ -22,6 +35,7 @@ const UniversityComponent = () => {
       }
       </ScrollView>
     </SafeAreaView>
+    </SafeAreaProvider>
   );
 };
 
@@ -37,7 +51,7 @@ const styles = StyleSheet.create({
         textAlign: "center"
     },
     scroll: {
-      
+
     }
 })
 
