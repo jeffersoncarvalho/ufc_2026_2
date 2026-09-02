@@ -7,7 +7,7 @@ public class Knight extends Character{
     }
 
     public void printMyName(){
-        System.out.println("Name: " + this.name);
-        System.out.println("Name: " + this.damage);
+        System.out.println("Name: " + this.getName());
+        System.out.println("Name: " + this.getDamage());
     }
 }

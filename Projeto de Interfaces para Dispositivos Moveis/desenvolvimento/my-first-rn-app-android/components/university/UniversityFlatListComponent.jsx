@@ -26,11 +26,11 @@ const UniversityFlatListComponent = () => {
       <FlatList 
         data={students}
         renderItem={
-            ({{name, course, ira, imagesrc}}) => <StudentComponent 
-                name = {name}
-                course={course}
-                ira={ira}
-                imagesrc={imagesrc}
+            ({item}) => <StudentComponent 
+                name = {item.name}
+                course={item.course}
+                ira={item.ira}
+                imagesrc={item.imagesrc}
             />
         }
         keyExtractor={
