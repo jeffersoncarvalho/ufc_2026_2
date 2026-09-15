@@ -1,11 +1,13 @@
 package br.ufc.quixada.rpg;
 
 public class Character {
-    //  DECLARANDO variáveis de instância/objeto
+    //DECLARANDO variáveis de instância/objeto
     private String name;
     private int hp;
     private int damage;
     private int defense;
+
+    //construtor???
 
     //gets e sets
     public void setName(String name){
@@ -18,7 +20,9 @@ public class Character {
     public void setHp(int hp){
         this.hp = hp;
     }
-    public int getHp(){ return this.hp;}
+    public int getHp(){
+        return this.hp;
+    }
 
     public void setDamage(int damage){
         if(damage < 0 || damage > 100){
@@ -50,5 +54,5 @@ public class Character {
         out += "\nDefense: " + this.defense;
 
         return out;
-     }
+    }
 }
