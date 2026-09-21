@@ -1,5 +1,6 @@
 package br.ufc.quixada.main;
 
+import br.ufc.quixada.gui.MainFramePanel;
 import br.ufc.quixada.rpg.*;
 import br.ufc.quixada.rpg.Character;
 
@@ -9,6 +10,9 @@ public class MyMainRPG {
 
     public static void main(String args[]){
 
+        new MainFramePanel();
+
+        /*
         //criando os objetos
         Character k = new Knight();
         Character m = new Mage();
@@ -35,5 +39,7 @@ public class MyMainRPG {
         //chamando o método "batle(Character characters[])"
         //b.battle(characters);
         b.enhacedBattle(characters);
+        */
+
     }
 }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .escondido {
+            display: none;
+        }
+        .revelar {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <table border="1">
+        <tr>
+            <td>
+                <img id="id-diana" src="https://www.quixada.ufc.br/wp-content/uploads/2015/11/Diana-Medina-e1730202955582-240x288.jpeg" />
+            </td>
+            <td>
+                <img id="id-ingrid" src="https://www.quixada.ufc.br/wp-content/uploads/2015/05/ingrid-azulejo-240x240.jpeg"/>
+            </td>
+            <td>
+                <img id="id-joao" src="https://www.quixada.ufc.br/wp-content/uploads/2015/11/Jo%C3%A3o-225x300.png" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="diana()">DIANA</button>
+            </td>
+            <td>
+                <button onclick="ingrid()">
+                    INGRID
+                </button>
+            </td>
+            <td>
+                <button onclick="joao()">JOÃO</button>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <button onclick="mostrar()">
+        MOSTRAR TODO MUNDO!
+    </button>
+
+    <script src="./professores.js">
+        
+    </script>
+</body>
+</html>

@@ -17,23 +17,57 @@
     .card-info, .card-skills {
         padding-left: 30px;
     }
+    .card-id {
+        color: #c0c0c0;
+        font-weight: bolder;
+    }
+    .card-skills {
+        margin-bottom: 5px;
+    }
+    .skill {
+        background-color: blue;
+        color: white;
+        padding: 2px 25px 2px 25px;
+        font-size: small;
+        border-radius: 3px;
+    }
+    .skill-planta {
+        background-color: lightgreen;
+        color: black;
+    }
+    .skill-poison {
+        background-color:#DDA0DD;
+        color: white;
+    }
+
+    .bumpable {
+        position: relative;
+        transition: transform 0.3s ease-out, opacity 0.2s ease-in;
+        transition-delay: 0.05s;
+    }
+
+    .bumpable:hover {
+        transform: translateY(-5px);
+        opacity: 0.8;
+    }
+
 </style>
 </head>
 <body>
-    <div class="card">
+    <div class="card bumpable">
         <div class="card-image">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
-                alt="Pikachu"
+            <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/001.png"
+                alt="Bulbasaur"
                 width="250px"
             />
         </div>
         <div class="card-info">
-            N<sup>o</sup> 00001
-            <h2>Pikachu</h2>
+            <span class="card-id">N<sup>o</sup> 00001</span>
+            <h2>Bulbasaur</h2>
         </div>
         <div class="card-skills">
-            <span>Planta</span>
-            <span>Electric</span>
+            <span class="skill skill-planta">Planta</span>
+            <span class="skill skill-poison">Poison</span>
         </div>
     </div>
 </body>
