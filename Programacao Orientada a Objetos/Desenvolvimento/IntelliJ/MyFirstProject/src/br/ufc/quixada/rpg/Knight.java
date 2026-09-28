@@ -2,8 +2,29 @@ package br.ufc.quixada.rpg;
 
 public class Knight extends Character{
 
+    private int x;
+    private int y;
+
     public Knight() {
         this.setDamage(25);
+        this.x = 250;
+        this.y = 250;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
     }
 
     public String attack(){

@@ -1,15 +1,20 @@
 package br.ufc.quixada.gui;
 
+import br.ufc.quixada.rpg.GameBoard;
+
 import javax.swing.*;
 import java.awt.*;
 
 //responsável em renderizar os sprites
 public class DrawPanel extends JPanel {
 
-    public DrawPanel(){
+    private GameBoard gameBoard; //o painel de desenho ele tem noção do tabuleiro do jogo
+
+    public DrawPanel(GameBoard gameBoard){
         //Dimension d = new Dimension(500,500);
         this.setPreferredSize(new Dimension(500,500)); //passando um objeto anônimo do tipo Dimension
         this.setBackground(Color.WHITE);
+        this.gameBoard = gameBoard;
     }
 
     @Override
@@ -18,7 +23,7 @@ public class DrawPanel extends JPanel {
         super.paint(g);
 
         g.setColor(Color.RED);
-        g.fillOval(250, 150, 20,20);
+        g.fillOval(this.gameBoard.getKnight().getX(), this.gameBoard.getKnight().getY(), 20, 20);
 
     }
 }
