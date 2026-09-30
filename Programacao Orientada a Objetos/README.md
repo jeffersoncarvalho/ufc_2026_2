@@ -43,8 +43,8 @@ Introduzir o paradigma de Programação Orientada a Objetos (OO), juntamente com
 
 |Aula|Conteúdo|
 |-|-|
-|05/10|**Prova 01**|
-|07/10|**Prova 01 – Segunda Chamada**|
+|14/10|**Prova 01**|
+|21/10|**Prova 01 – Segunda Chamada**|
 
 ## Unidade 3 – Polimorfismo, Interfaces e Exceções
 
