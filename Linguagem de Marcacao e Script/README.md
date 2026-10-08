@@ -29,15 +29,15 @@ LINGUAGEM DE MARCAÇÃO E SCRIPT
 | 18 | 13/10 (seg) | Media Queries |
 | 19 | 19/10 (seg) | Grid Layout — parte 1 |
 | 20 | 20/10 (seg) | Grid Layout — parte 2 |
-| 21 | **26/10 (ter)** | **Avaliação Parcial 1** |
-| 22 | **27/10 (ter)** | **Segunda Chamada — Avaliação Parcial 1** |
-| 23 | 03/11 (seg) | FlexBox — parte 1 |
-| 24 | 09/11 (ter) | FlexBox — parte 2 |
+| 21 | x | x |
+| 22 | x | x |
+| 23 | 03/11 (ter) | FlexBox — parte 1 |
+| 24 | 09/11 (seg) | FlexBox — parte 2 |
 
 ## JavaScript / DOM (aulas 25 a 30)
 | Aula | Data | Conteúdo |
 |---|---|---|
-| 25 | 10/11 (ter) | Introdução ao JavaScript - Funções e Promessas |
+| 25 | 10/11 (ter) | **Avaliação Parcial 1** |
 | 26 | 16/11 (seg) | Introdução ao JavaScript - Fetch/Axios |
 | 27 | 17/11 (ter) | DOM — introdução (o objeto document)  |
 | 28 | 23/11 (seg) | Selecionando elementos (getElementById, querySelector) |
@@ -49,8 +49,8 @@ LINGUAGEM DE MARCAÇÃO E SCRIPT
 
 | Data | Evento |
 |---|---|
-| **01/12 (ter)** | **Avaliação Parcial 2** |
-| **07/12 (seg)** | **Segunda Chamada — Avaliação Parcial 2** e **Apresentação do Projeto Final — dia 1**|
+| **01/12 (ter)** | x |
+| **07/12 (seg)** | **Segunda Chamada — Avaliação Parcial 1** e **Apresentação do Projeto Final — dia 1**|
 | **08/12 (ter)** | **Apresentação do Projeto Final — dia 2** |
 
 
