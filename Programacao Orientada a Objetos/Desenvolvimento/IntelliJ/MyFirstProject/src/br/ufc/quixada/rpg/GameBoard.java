@@ -11,5 +11,7 @@ public class GameBoard {
 
     public GameBoard() {
         this.knight = new Knight();
+        this.knight.setX(100);
+        this.knight.setY(100);
     }
 }

@@ -7,6 +7,37 @@ public class Character {
     private int damage;
     private int defense;
 
+    //posição do personagem na tela
+    private int x;
+    private int y;
+
+    public int getX() {
+        return x;
+    }
+    public void setX(int x) {
+        this.x = x;
+    }
+    public int getY() {
+        return y;
+    }
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    //metodos de movimento
+    public void up(){
+        this.y = this.y - 5;
+    }
+    public void down(){
+        this.y = this.y + 5;
+    }
+    public void left(){
+        this.x = this.x - 5;
+    }
+    public void right(){
+        this.x = this.x + 5;
+    }
+
     //gets e sets
     public void setName(String name){
         this.name = name;

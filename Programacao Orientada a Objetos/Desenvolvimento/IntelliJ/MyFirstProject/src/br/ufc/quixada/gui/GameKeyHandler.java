@@ -20,20 +20,24 @@ public class GameKeyHandler extends KeyAdapter {
         int key = e.getKeyCode();
         switch (key){
             case KeyEvent.VK_UP:
-                System.out.println("CIMA");
-                this.gameBoard.getKnight().setY( this.gameBoard.getKnight().getY() - 5 );
+                //System.out.println("CIMA");
+                //this.gameBoard.getKnight().setY( this.gameBoard.getKnight().getY() - 5 );
+                this.gameBoard.getKnight().up();
                 break;
             case KeyEvent.VK_DOWN:
-                System.out.println("BAIXO");
-                this.gameBoard.getKnight().setY( this.gameBoard.getKnight().getY() + 5 );
+                //System.out.println("BAIXO");
+                //this.gameBoard.getKnight().setY( this.gameBoard.getKnight().getY() + 5 );
+                this.gameBoard.getKnight().down();
                 break;
             case KeyEvent.VK_LEFT:
-                System.out.println("ESQUERDA");
-                this.gameBoard.getKnight().setX( this.gameBoard.getKnight().getX() - 5 );
+                //System.out.println("ESQUERDA");
+                //this.gameBoard.getKnight().setX( this.gameBoard.getKnight().getX() - 5 );
+                this.gameBoard.getKnight().left();
                 break;
             case KeyEvent.VK_RIGHT:
-                System.out.println("DIREITA");
-                this.gameBoard.getKnight().setX( this.gameBoard.getKnight().getX() + 5 );
+                //System.out.println("DIREITA");
+                //this.gameBoard.getKnight().setX( this.gameBoard.getKnight().getX() + 5 );
+                this.gameBoard.getKnight().right();
                 break;
         }//switch
 
