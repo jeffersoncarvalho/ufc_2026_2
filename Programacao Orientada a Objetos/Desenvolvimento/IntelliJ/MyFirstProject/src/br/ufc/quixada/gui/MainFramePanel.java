@@ -11,6 +11,7 @@ public class MainFramePanel extends JFrame {
 
     private DrawPanel drawPanel; //declaração de variável
     private GameBoard gameBoard; //declaração do tabuleiro
+    private HUDPanel hudPanel;
 
     public MainFramePanel(){
         //estou chamando o construtor da minha super classe direta!
@@ -22,7 +23,10 @@ public class MainFramePanel extends JFrame {
         //inserindo as subjanelas
         this.gameBoard = new GameBoard(); //alocando memória para um GameBoard
         this.drawPanel = new DrawPanel(this.gameBoard); //criando o objeto
+        this.hudPanel = new HUDPanel();
+        this.gameBoard.setHudPanelReference(this.hudPanel);
         container.add(this.drawPanel, BorderLayout.CENTER);
+        container.add(this.hudPanel, BorderLayout.SOUTH);
 
         //evento do teclado
         this.addKeyListener(new GameKeyHandler(this.gameBoard, this.drawPanel));

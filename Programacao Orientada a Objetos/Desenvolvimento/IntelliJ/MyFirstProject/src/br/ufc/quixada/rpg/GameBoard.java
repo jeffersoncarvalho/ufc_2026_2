@@ -1,6 +1,7 @@
 package br.ufc.quixada.rpg;
 
 import br.ufc.quixada.entities.Gold;
+import br.ufc.quixada.gui.HUDPanel;
 
 import java.util.ArrayList;
 
@@ -9,12 +10,17 @@ public class GameBoard {
 
     private Knight knight;
     private ArrayList<Gold> golds = new ArrayList<Gold>();
+    private HUDPanel hudPanelReference;
 
     public GameBoard() {
         this.knight = new Knight();
         this.knight.setX(100);
         this.knight.setY(100);
         this.generateGolds();
+    }
+
+    public void setHudPanelReference(HUDPanel hudPanelReference) {
+        this.hudPanelReference = hudPanelReference;
     }
 
     public ArrayList<Gold> getGolds() {
@@ -54,6 +60,7 @@ public class GameBoard {
             if( d <= 10){
                 //System.out.println("COLISÃO");
                 positionToRemove = i;
+                this.hudPanelReference.addPoint();
                 break;
 
             }
