@@ -38,5 +38,31 @@ public class GameBoard {
         return knight;
     }
 
+    private int distance(int x1, int x2, int y1, int y2){
+        int d = (int) Math.sqrt(
+                (x1 - x2)*(x1 - x2)+(y1 - y2)*(y1 - y2)
+        );
+        return d;
+    }
+
+    public void calculateGoldCollision(){
+        int positionToRemove = -1;
+        int i = 0;
+        for(Gold ouro:this.getGolds()){
+            int d = distance(ouro.getX(), knight.getX(),
+                             ouro.getY(), knight.getY());
+            if( d <= 10){
+                //System.out.println("COLISÃO");
+                positionToRemove = i;
+                break;
+
+            }
+            i++;
+        }
+
+        if(positionToRemove >=0){
+            this.getGolds().remove(positionToRemove);
+        }
+    }
 
 }

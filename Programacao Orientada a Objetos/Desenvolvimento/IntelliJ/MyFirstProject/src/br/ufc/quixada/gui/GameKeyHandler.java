@@ -17,6 +17,7 @@ public class GameKeyHandler extends KeyAdapter {
 
     @Override
     public void keyPressed(KeyEvent e) {
+        this.gameBoard.calculateGoldCollision();
         int key = e.getKeyCode();
         switch (key){
             case KeyEvent.VK_UP:
@@ -39,6 +40,7 @@ public class GameKeyHandler extends KeyAdapter {
                 //this.gameBoard.getKnight().setX( this.gameBoard.getKnight().getX() + 5 );
                 this.gameBoard.getKnight().right();
                 break;
+
         }//switch
 
         //avise ao painel de desenho para se redesenhar (repaint)
