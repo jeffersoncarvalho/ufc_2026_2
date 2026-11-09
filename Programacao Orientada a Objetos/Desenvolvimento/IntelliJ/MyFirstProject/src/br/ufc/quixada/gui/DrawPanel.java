@@ -1,5 +1,6 @@
 package br.ufc.quixada.gui;
 
+import br.ufc.quixada.entities.Gold;
 import br.ufc.quixada.rpg.GameBoard;
 
 import javax.swing.*;
@@ -22,8 +23,17 @@ public class DrawPanel extends JPanel {
         //repassando para a super classe, o objeto g que será usado aqui
         super.paint(g);
 
-        g.setColor(Color.RED);
+        //desenhar os golds
+        for(Gold ouro:this.gameBoard.getGolds()){
+            g.setColor(ouro.getColor());
+            g.fill3DRect(ouro.getX(),ouro.getY(),20,10,true);
+        }
+
+        //desenhando o cavaleiro
+        g.setColor(Color.BLACK);
         g.fillOval(this.gameBoard.getKnight().getX(), this.gameBoard.getKnight().getY(), 20, 20);
+
+
 
     }
 }
